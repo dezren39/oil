@@ -48,7 +48,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit raw-vm T
 
@@ -68,7 +67,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit dev-setup-debian T
 
@@ -90,7 +88,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit dummy T
 
@@ -111,7 +108,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit dev-minimal T
 
@@ -137,7 +133,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit interactive T
 
@@ -158,7 +153,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit pea T
 
@@ -178,7 +172,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit other-tests T
 
@@ -198,7 +191,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit ovm-tarball T
 
@@ -219,7 +211,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit app-tests T
 
@@ -239,7 +230,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit cpp-coverage T
 
@@ -259,7 +249,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit benchmarks T
 
@@ -280,7 +269,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit bloaty T
 
@@ -301,7 +289,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit benchmarks2 T
 
@@ -327,7 +314,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit cpp-small T
 
@@ -354,14 +340,12 @@ jobs:
         env:
           # auth for web server
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-cpp-tarball
 
       - name: publish-html
         env:
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit cpp-tarball T
 
@@ -387,7 +371,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit cpp-spec T
 
@@ -408,7 +391,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           soil/github-actions.sh publish-and-exit wild T
 
@@ -433,7 +415,6 @@ jobs:
         env:
           # for deploying to dashboard
           OILS_GITHUB_KEY: ${{ secrets.OILS_GITHUB_KEY }}
-          MB_OILS_KEY: ${{ secrets.MB_OILS_KEY }}
         run: |
           # NOTE: does not publish to status API
           soil/github-actions.sh publish-and-exit maybe-merge
